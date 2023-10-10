@@ -4,7 +4,7 @@ html,
 body {
   margin: 0;
   width: 100%;
-  background-color:rgb(233, 227, 217);
+  background-color:rgb(255, 255, 255);
 }
 
 h1,
@@ -27,6 +27,7 @@ h1 {
   padding-right: 30%; */
   padding-left: 30vw;
   padding-right: 30vw;
+  color: black;
 }
 
 h2 {
@@ -53,6 +54,7 @@ h3 {
     letter-spacing: -0.45px;
     padding-left: 30vw;
     padding-right: 30vw;
+    color: black;
   }
 
 p, i, a {
