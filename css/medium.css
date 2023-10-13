@@ -18,6 +18,18 @@ a,
   text-rendering: optimizeLegibility;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+img {
+  width: 40%;
+  height: 40%;
+}
+
 h1 {
   font-family: "Lora", serif;
   font-size: 48px;
