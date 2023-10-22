@@ -15,11 +15,30 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="./css/medium.css">
+  <script src="javascript/main.js"></script>
+  <script>
+    $('img[data-enlargable]').addClass('img-enlargable').click(function(){
+    var src = $(this).attr('src');
+    $('<div>').css({
+        background: 'RGBA(0,0,0,.5) url('+src+') no-repeat center',
+        backgroundSize: 'contain',
+        width:'100%', height:'100%',
+        position:'fixed',
+        zIndex:'10000',
+        top:'0', left:'0',
+        cursor: 'zoom-out'
+    }).click(function(){
+        $(this).remove();
+    }).appendTo('body');
+});
+  </script>
 
-  <title>An App For the Elderly</title>
+  <title>WiseWell</title>
+  
 </head>
 <body>
-  <h1>An App For the Elderly</h1>
+  <h1>WiseWell: An App For the Elderly</h1>
+  <h3>By Ricky Jr Mungcal and Therese Farah</h3>
     <h2>Introduction</h2>
     <p>
       Since the onset of the Covid-19 pandemic, our lives have been reshaped significantly, and technology has played an ever more central role.
@@ -48,27 +67,29 @@
       <div class="rectangle">
         From the results of our survey, we found that the majority of respondents own a smartphone and use it daily. The primary use of their smartphones is for communication, followed by entertainment and health tracking.<br>
       </div>
-    <img src="images/Picture1.png" class="center">
+    <img src="images/Picture1.png" class="rectangle">
       <br>
-    <img src="images/Picture2.png" class="center">
+    <img src="images/Picture2.png" class="rectangle">
       <br>
-    <img src="images/Picture3.png" class="center">
+    <img src="images/Picture3.png" class="rectangle">
       <br>
     <div class="rectangle">
       During the COVID-19 pandemic, a significant number of respondents experienced isolation. They found it challenging to use multiple social media platforms to keep in touch with their family. As a result, a majority of them believe it would be beneficial to have one app that shows all their relatives' posts from different apps.
+      <br>
     </div>
-    <img src="images/Picture4.png" class="center">
+    <img src="images/Picture4.png" class="rectangle">
       <br>
-    <img src="images/Picture5.png" class="center">
+    <img src="images/Picture5.png" class="rectangle">
       <br>
-    <img src="images/Picture6.png" class="center">
+    <img src="images/Picture6.png" class="rectangle">
       <br>
     <div class="rectangle">
       Interestingly, the difficulty in getting in touch with medical assistance during the pandemic increased across older age groups. This highlights the need for more accessible and user-friendly digital health solutions for seniors. We suspect the decline in the 80+ group is because they are a priority segment in the medical field.
-    </div>
-    <img src="images/Picture7.png" class="center">
       <br>
-    <img src="images/Picture8.png" class="center">
+    </div>
+    <img src="images/Picture7.png" class="rectangle">
+      <br>
+    <img src="images/Picture8.png" class="rectangle">
       <br>
     <div class="rectangle">
       Lastly we have received some valuable requests and insights for our app.
@@ -96,10 +117,35 @@
     <h3>User Research - Personas</h3>
     <br>
     <p>
+      To better represent our users and to understand their needs, we created two personas.
+      <br><br>
     <img src="images/Marg Persona.png"class="center">
       <br><br>
     <img src="images/Larry Persona.png" class="center">
+    <br><br>
+    
+    By having these two personas, we are able to experience the app through two different perspectives,both having separate needs and wants.
+    As Margaret is an extrovert, she wants to make new friends as well as staying physically active and finding new workouts that seniors can do.
+    <br><br>
+    For Larry, he lives with his family at home and is on a wheelchair. So, instead of wanting to stay physically active, he wants to be able to easily schedule sessions
+    and appointments with a doctor or a health specialist. He also wants to stay in contact with his family and be able to easily message them while they are out of the house.
+    <br>
     </p>
+    <h3>User Research - Journeys</h3>
+    <br><br>
+    <p>
+      To better understand how each of the personas would go through the app, we also created their corresponding user journeys, showing the path they would take while using the
+      application.
+      <br><br>
+    </p>
+    <p>Margaret Journey:</p>
+    <br>
+      <img data-enlargable src="images/Marg User Journey.png"  class="center" style="width: 65%;">
+      <br><br>
+      <p>Larry Journey:</p>
+      <br>
+      <img src="images/Larry User Journey.png" class="center" style="width: 65%;">
+    
     <h2>Prototypes</h2>
     <h3>User Flow Diagram</h3>
     <p>
@@ -109,25 +155,96 @@
     <h3>Sketches</h3>
     <p>
       These rough drafts emerged as a direct product of our brainstorming session, playing a fundamental role in bringing the app's layout into clear focus.
+      <br>
     <img src="images/Sketches.png"width="150%" height="150%" class="center">
     </p>
     <h3>Wireframe</h3>
     <p>
+      
       Following this, we harnessed these sketches as the foundation for crafting wireframes to further develop the app's design.
-    <img src="images/Wireframe.png" width="170%" height="170%" class="center">
     </p>
+    <img src="images/Wireframe.png"  class="center" style="width:60%">
+    
     <h3>Color Palette</h3>
     <p>
       The color palette is particularly well-suited for older individuals, primarily due to the high contrast these colors offer.
       High contrast color combinations, such as orange and yellow, are beneficial for seniors as they enhance visual clarity and readability. 
       As people age, their eyes may undergo changes that affect their ability to perceive colors and distinguish subtle contrasts. 
-      These colors are known for their vibrancy and ability to capture attention, which is especially important for seniors when using apps, ensuring that important information and interactive elements are easily discernible, promoting a more user-friendly and accessible experience for an older demographic.
+      These colors are known for their vibrancy and ability to capture attention, which is especially important for seniors when using apps, ensuring that important information and interactive elements are easily discernible, promoting a more user-friendly and accessible experience for an older demographic.<br>
     <img src="images/ColorPalette.png" class="center">
     </p>
+    <br>
     <h2>The Final Product</h2>
+    <br>
+    <p>With the wireframes and the color palette, we were able to create a mockup of the final product. The app will be called "WiseWell" and will
+      allow seniors to be able to meet new people, view workouts made for seniors as well as message and facetime family, friends and doctors whenever needed.
+    </p>
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 8</div>
+        <img src="images/SignUpLogin.png" class="center">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 8</div>
+        <img src="images/LinkAcc.png" class="center">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 8</div>
+        <img src="images/Pref.png" class="center" style="width:50%;height: 50%;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 8</div>
+        <img src="images/Social.png" class="center">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 8</div>
+        <img src="images/Exercise.png" class="center">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 8</div>
+        <img src="images/Medical.png" class="center">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 8</div>
+        <img src="images/Chat.png" class="center">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 8</div>
+        <img src="images/Profile.png" class="center">
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+    </div>
+
     <h2>Conclusion</h2>
     <p>
-      We have an amazing app for old peops
+      In conclusion, by looking into the problem of seniors being left in isolation during and after the pandemic, we created a mobile app called WiseWell that focuses
+      on offering a way to connect with new people, discover suitable workouts for seniors, access to medical professionals and keep an open line of communication with family that
+      ultimately enhances the quality of life for the elderly during and after the pandemic. 
     </p>
 </body>
 
